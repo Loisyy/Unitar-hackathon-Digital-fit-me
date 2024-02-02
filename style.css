@@ -2,26 +2,27 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 60px 0;
+    /* Add top padding to make space for the navbar */
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
 .navbar {
-    background-color: #076004;
+    background-color: #333;
     overflow: hidden;
     position: fixed;
-    /* Add this line */
+    /* Fixed position to stay at the top */
     width: 100%;
-    /* Add this line */
+    /* Full width */
     top: 0;
-    /* Add this line */
+    /* Stick to the top */
     z-index: 1000;
-    /* Add this line */
+    /* Ensure it's on top of other elements */
 }
 
 .navbar a {
@@ -35,51 +36,39 @@ body {
 
 .navbar a:hover {
     background-color: #ddd;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .home-container {
     max-width: 800px;
     width: 100%;
     background-color: #fff;
-    /* Secondary color - white */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    margin: 20px auto;
-    animation: fadeIn 1s ease;
-    /* Add fade-in animation */
+    margin: 120px auto 20px;
+    margin-top: 15rem;
+    /* Adjust margin-top to make space for the fixed navbar */
 }
 
 .features {
-    margin-top: 20px;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .feature-item {
+    width: 30%;
+    /* Adjust the width as needed */
     margin-bottom: 20px;
-    animation: slideInUp 1s ease;
-    /* Add slide-in animation */
+    text-align: center;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideInUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Optional: Add border radius for rounded corners */
 }
