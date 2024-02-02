@@ -9,10 +9,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #036810;
+    background-color: #035d8e;
 }
 .navbar {
-    background-color: #036810;
+    background-color: #035d8e;
     overflow: hidden;
     position: fixed;
     /* Fixed position to stay at the top */
@@ -75,7 +75,7 @@ body {
 
 .button {
     padding: 10px 20px;
-    background-color: #4CAF50; /* Primary color - green */
+    background-color: #035d8e; /* Primary color - green */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -83,7 +83,7 @@ body {
 }
 
 .button:hover {
-    background-color: #45a049; /* Darker shade of green on hover */
+    background-color:#035d8e; /* Darker shade of green on hover */
 }
 
 /* General styles for signup forms */
@@ -129,7 +129,7 @@ body {
     padding: 20px;
     text-align: center;
     margin: 120px auto 20px;
-    margin-top: 400px;
+    margin-top: 700px;
     /* Adjust margin-top to make space for the fixed navbar */
 }
 
@@ -158,12 +158,72 @@ body {
     max-width: 800px;
     width: 100%;
     background-color: #fff;
-    /* Secondary color - white */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     padding: 20px;
+    height: 500px;
+}
+.dashboard-container1 {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    height: 150px;
+    
+}
+.dashboard-container2 {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    height: 150px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    margin: 10px;
+    /* Add some margin for spacing between columns */
+}
+
+.col-1 {
+    flex-basis: 100%;
+}
+
+.col-2 {
+    flex-basis: calc(50% - 20px);
+    /* Adjusted width for col-2 */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #035d8e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #035d8e;
+}
