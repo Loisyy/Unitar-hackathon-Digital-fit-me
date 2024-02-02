@@ -142,3 +142,17 @@ body {
     border-radius: 8px;
     /* Optional: Add border radius for rounded corners */
 }
+
+.dashboard-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    /* Secondary color - white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
