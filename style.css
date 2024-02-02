@@ -2,8 +2,7 @@
 
 body {
     margin: 0;
-    padding: 60px 0;
-    /* Add top padding to make space for the navbar */
+    padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     display: flex;
@@ -11,9 +10,8 @@ body {
     align-items: center;
     height: 100vh;
 }
-
 .navbar {
-    background-color: #333;
+    background-color: #036810;
     overflow: hidden;
     position: fixed;
     /* Fixed position to stay at the top */
@@ -39,6 +37,78 @@ body {
     color: black;
 }
 
+.onboarding-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff; /* Secondary color - white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.onboarding-step {
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.onboarding-step.active {
+    display: block;
+}
+
+.step-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Primary color - green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}
+
+/* General styles for signup forms */
+.onboarding-step form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.onboarding-step form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.onboarding-step form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Teacher signup form styles */
+.onboarding-step form.teacher-signup-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Student signup form styles */
+.onboarding-step form.student-signup-form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .home-container {
     max-width: 800px;
     width: 100%;
@@ -48,12 +118,12 @@ body {
     padding: 20px;
     text-align: center;
     margin: 120px auto 20px;
-    margin-top: 15rem;
+    margin-top: 400px;
     /* Adjust margin-top to make space for the fixed navbar */
 }
 
 .features {
-    margin-top: 200px;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
