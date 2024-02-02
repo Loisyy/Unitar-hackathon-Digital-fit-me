@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #036810;
 }
 .navbar {
     background-color: #036810;
@@ -41,9 +42,19 @@ body {
     max-width: 600px;
     width: 100%;
     background-color: #fff; /* Secondary color - white */
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    margin-left: 500px;
+    margin: -3px 10px 0 auto
+}
+.Fit-me-home{
+    color: white;
+    text-align: center;
+}
+.grassroot{
+    color: grey;
+    text-align: left;
+    margin-top: -150px;
 }
 
 .onboarding-step {
